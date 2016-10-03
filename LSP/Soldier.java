@@ -7,5 +7,6 @@ public class Soldier{
 
     public void killEnemy(){
         System.out.println("Solider killing enemy ...");
+        gun.shoot();
     }
 };
