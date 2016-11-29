@@ -1,5 +1,6 @@
 #include "Singleton.hpp"
 #include <iostream>
+#include <cassert>
 
 int main()
 {
@@ -11,6 +12,8 @@ int main()
     }
     
     Singleton* l_st1 = Singleton::getInstance();
+    
+    assert(l_st0 == l_st1);
     
     std::cout << "Singleton-0: " << l_st0 << ", Singleton-1: " << l_st1 << std::endl;
 
