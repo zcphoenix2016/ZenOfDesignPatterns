@@ -23,6 +23,6 @@ int main()
     l_maleYellowHuman->getSex();
     l_maleYellowHuman->talk();
     std::cout << "-------------------------------" << std::endl;
-    
+
     return 0;
 }
