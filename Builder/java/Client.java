@@ -4,20 +4,14 @@ public class Client{
     public static void main(String[] args){
         Director director = new Director();
 
-        for(int i = 0; i < 2; i ++){
-            director.getABenzModel().run();
-        }
+        BenzModel benA = director.getBenzAModel();
+        BenzModel benB = director.getBenzBModel();
+        BMWModel bmwA = director.getBMWAModel();
+        BMWModel bmwB = director.getBMWBModel();
 
-        for(int i = 0; i < 2; i ++){
-            director.getBBenzModel().run();
-        }
-
-        for(int i = 0; i < 2; i ++){
-            director.getCBMWModel().run();
-        }
-
-        for(int i = 0; i < 2; i ++){
-            director.getDBMWModel().run();
-        }
+        benA.run();
+        benB.run();
+        bmwA.run();
+        bmwB.run();
     }
 }

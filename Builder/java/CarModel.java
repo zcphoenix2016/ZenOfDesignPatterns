@@ -26,6 +26,6 @@ public abstract class CarModel{
     }
 
     final public void setSequence(ArrayList<String> sequence){
-        this.sequence = sequence;
+        this.sequence = (ArrayList<String>)sequence.clone();
     }
 }

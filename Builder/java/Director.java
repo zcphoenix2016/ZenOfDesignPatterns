@@ -5,7 +5,7 @@ public class Director {
     private BenzBuilder benzBuilder = new BenzBuilder();
     private BMWBuilder bmwBuilder = new BMWBuilder();
 
-    public BenzModel getABenzModel(){
+    public BenzModel getBenzAModel(){
         this.sequence.clear();
         this.sequence.add("start");
         this.sequence.add("stop");
@@ -13,7 +13,7 @@ public class Director {
         return (BenzModel)this.benzBuilder.getCarModel();
     }
 
-    public BenzModel getBBenzModel(){
+    public BenzModel getBenzBModel(){
         this.sequence.clear();
         this.sequence.add("engine boom");
         this.sequence.add("start");
@@ -22,7 +22,7 @@ public class Director {
         return (BenzModel)this.benzBuilder.getCarModel();
     }
 
-    public BMWModel getCBMWModel(){
+    public BMWModel getBMWAModel(){
         this.sequence.clear();
         this.sequence.add("alarm");
         this.sequence.add("start");
@@ -31,7 +31,7 @@ public class Director {
         return (BMWModel)this.bmwBuilder.getCarModel();
     }
 
-    public BMWModel getDBMWModel(){
+    public BMWModel getBMWBModel(){
         this.sequence.clear();
         this.sequence.add("start");
         this.bmwBuilder.setSequence(this.sequence);

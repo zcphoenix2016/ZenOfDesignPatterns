@@ -1,13 +1,15 @@
 import java.util.ArrayList;
 
 public class BenzBuilder extends CarBuilder{
-    private BenzModel benz = new BenzModel();
+    private ArrayList<String> sequence = new ArrayList<String>();
 
     public CarModel getCarModel(){
-        return this.benz;
+        BenzModel benz = new BenzModel();
+        benz.setSequence(this.sequence);
+        return benz;
     }
 
     public void setSequence(ArrayList<String> sequence){
-        this.benz.setSequence(sequence);
+        this.sequence = (ArrayList<String>)sequence.clone();
     }
 }
